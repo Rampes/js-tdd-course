@@ -1,0 +1,31 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "curso de tdd na pratica",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint source/*.js",
+    "prepush" : "npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Rampes/js-tdd-course.git)"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Matheus Lopes <matheus.lopes2@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.4.0"
+  }
+}
