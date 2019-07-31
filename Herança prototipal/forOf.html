@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  </body>
+  <script>
+    // iterators
+    // iterable
+
+    //var txt = "Ireland"; // iterable
+    //var it = txt[Symbol.iterator]();// iterator
+
+    //for ( letter of txt) {
+    //  console.log(letter);
+    //  if (letter === 'a') break;
+    //}
+
+   function* genNames(){
+     //é possivel colocar ações antes de chegar no primeiro fluxo
+     //exemplo:
+     console.log("Isso foi rodado antes do primeiro fluxo");
+     yield 'William';
+     console.log("já isso só roda no segundo next");
+     yield 'Xonas';
+     console.log("sacou né?");
+     yield 'Gabrel'
+   }
+
+   const names = genNames();
+
+   console.log(names.next());
+   
+
+  </script>
+</html>

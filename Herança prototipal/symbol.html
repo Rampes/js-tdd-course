@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  </body>
+
+  <script>
+      let foo = Symbol('name');
+      let bar = Symbol('name');
+
+      console.log(foo == bar); //false
+        // Apesar de foo e bar terem o mesmo valor, o Symbol cria uma chave única pra cada variável
+
+      let obj = {
+        [Symbol('name')]: 'Matheus',
+        [Symbol('age')]: 22,
+        city: 'São Paulo'
+      }
+
+      console.log(Object.keys(obj));
+
+      const symbols = Object.getOwnPropertySymbols(obj);
+
+      const data = symbols.map(sym => obj[sym]);
+
+      console.log(data);
+
+      // o Symbol serve para pegar uma propriedade que não queremos que corra o risco de ter um risco de nomes
+  </script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+</body>
+<script>
+  class Animal {
+    constructor(kind, sound) {
+      this.kind = kind;
+      this.sound = sound;
+    }
+
+    hello() {
+      console.log(`${this.sound} I'm ${this.kind}`);
+    }
+
+  }
+
+  class Dog extends Animal {
+    constructor(name, sound) {
+      super(name);
+      this.sound = sound;
+    }
+
+    bark() {
+      console.log(`${this.sound} I'm ${this.name}`);
+    }
+  }
+
+
+
+  //classe
+  //  function Animal(kind, sound) {
+  //constructor
+
+  //  }
+
+  //  Animal.prototype.hello = function() {
+  //    console.log(`${this.sound} I'm a ${this.kind}`);
+  //  }
+
+  const dog = new Dog('dog', 'auau');
+  const cat = new Animal('cat', 'meow');
+  const elephant = new Animal('dumbo', '~barulho de elefante~');
+
+
+  console.log(dog);
+  console.log(cat);
+</script>
+
+</html>
